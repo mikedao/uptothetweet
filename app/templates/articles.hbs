@@ -1,0 +1,10 @@
+<div class="articles">
+  {{#each model as |article|}}
+    <div class="article">
+      {{article.title}}
+      {{article.abstract}}
+    </div>
+  {{/each}}
+</div>
+{{outlet}}
+
