@@ -8,12 +8,11 @@ import Ember from 'ember';
 import startApp from '../helpers/start-app';
 var App;
 
-
-module('articles sidebar', {
-  beforeEach: function() {
-    App = startApp;
+module('Integration: articles', {
+  setup: function() {
+    App = startApp();
   },
-  afterEach: function() {
+  teardown: function() {
     Ember.run(App, 'destroy');
   }
 });
