@@ -3,9 +3,8 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
-  'ember-cli-bootstrap-sass': {
-    'components': true,
-     'importBootstrapJS' : true
+  'ember-cli-bootstrap-sassy': {
+     'js' : true
   }
 });
 
