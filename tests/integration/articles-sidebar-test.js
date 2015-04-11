@@ -8,6 +8,7 @@ import Ember from 'ember';
 import startApp from '../helpers/start-app';
 var App;
 
+
 module('articles sidebar', {
   beforeEach: function() {
     App = startApp;
