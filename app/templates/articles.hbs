@@ -1,0 +1,10 @@
+<div class="col-md-4 articles">
+  {{#each model as |article|}}
+    <div class="article">
+      <h2>{{#link-to 'article' article}} {{article.title}} {{/link-to}}</h2>
+      {{article.abstract}}
+    </div>
+  {{/each}}
+</div>
+{{outlet}}
+
