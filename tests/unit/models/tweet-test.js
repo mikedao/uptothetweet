@@ -20,6 +20,12 @@ test('tweet has meta data properties', function(assert){
   var body = Tweet.metaForProperty('body');
   assert.ok(body.isAttribute);
   assert.strictEqual(body.type, 'string');
+  var username = Tweet.metaForProperty('username');
+  assert.ok(username.isAttribute);
+  assert.strictEqual(username.type, 'string');
+  var userProfileImage = Tweet.metaForProperty('userProfileImage');
+  assert.ok(userProfileImage.isAttribute);
+  assert.strictEqual(userProfileImage.type, 'string');
 });
 
 test("it has attributes", function(assert){
