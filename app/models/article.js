@@ -6,7 +6,8 @@ let Article = DS.Model.extend({
   url: DS.attr('string'),
   descFacet: DS.attr('string'),
   latitude: DS.attr('number'),
-  longitude: DS.attr('number')
+  longitude: DS.attr('number'),
+  tweets: DS.hasMany('tweet', { async: true })
 });
 
 export default Article;
