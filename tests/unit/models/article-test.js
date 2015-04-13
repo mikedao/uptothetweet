@@ -3,9 +3,12 @@ import {
   test
 } from 'ember-qunit';
 
+import Article from 'uptothetweet/models/article';
+import Tweet from 'uptothetweet/models/tweet';
+
 moduleForModel('article', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ['model:tweet']
 });
 
 test('it exists', function(assert) {
