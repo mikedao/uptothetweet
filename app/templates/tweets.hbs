@@ -1,7 +1,17 @@
 <div class="col-md-4">
   <div class="tweets">
-    {{#each model as |tweet|}}
-      <p>{{tweet.body}}</p>
-    {{/each}}
+    <div class="panel panel-default">
+      <table class="table">
+        <tbody>
+          {{#each model as |tweet|}}
+            <tr>
+              <td>
+                <p>{{tweet.body}}</p>
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>

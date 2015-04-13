@@ -3,13 +3,16 @@ body {
   padding: 0;
 }
 
+.articles, .article-show, .tweets, .instructions {
+  margin-top: 75px;
+}
+
 .articles {
   overflow: scroll;
   position: fixed;
   top: 0;
   bottom: 0%;
   width: 30%;
-  margin-top: 75px;
 }
 
 .article-show {
