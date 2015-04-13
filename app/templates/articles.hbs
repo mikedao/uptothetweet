@@ -1,10 +1,13 @@
-<div class="col-md-4 articles">
-  {{#each model as |article|}}
-    <div class="article">
-      <h2>{{#link-to 'tweets' article}} {{article.title}} {{/link-to}}</h2>
-      {{article.abstract}}
-    </div>
-  {{/each}}
+<div class="col-md-4">
+  <h1 id="title">Up to the Tweet News</h1>
+  <div class="articles">
+    {{#each model as |article|}}
+      <div class="article">
+        <h2>{{#link-to 'tweets' article}} {{article.title}} {{/link-to}}</h2>
+        {{article.abstract}}
+      </div>
+    {{/each}}
+  </div>
 </div>
 {{outlet}}
 
