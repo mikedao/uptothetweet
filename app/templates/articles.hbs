@@ -7,7 +7,7 @@
           {{#each model as |article|}}
             <tr>
               <td>
-                <h2>{{#link-to 'tweets' article}} {{article.title}} {{/link-to}}</h2>
+                <h2>{{#link-to 'article' article}} {{article.title}} {{/link-to}}</h2>
               </td>
             </tr>
           {{/each}}
@@ -17,4 +17,3 @@
   </div>
 </div>
 {{outlet}}
-
