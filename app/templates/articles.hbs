@@ -1,12 +1,13 @@
+
 <div class="col-md-4">
-  <h1 id="title">Up to the Tweet News</h1>
+
   <div class="articles list-group">
     {{#each model as |article|}}
-      {{#link-to 'tweets' article class='list-group-item'}}
-        <h2 class="list-group-item-heading">
-          {{article.title}}
-        </h2>
-      {{/link-to}}
+    {{#link-to 'tweets' article class='list-group-item'}}
+    <h2 class="list-group-item-heading">
+      {{article.title}}
+    </h2>
+    {{/link-to}}
     {{/each}}
   </div>
 </div>

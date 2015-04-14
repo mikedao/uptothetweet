@@ -1,9 +1,20 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #2c3e50;
 }
 
-.articles, .article-show, .tweets, .instructions {
+.heading {
+  padding-left: 30px;
+}
+
+.title {
+  font-family: 'PT Serif Caption', serif;
+  padding-left: 75px;
+  padding-top: 5px;
+}
+
+.articles, .tweets, .instructions {
   margin-top: 75px;
 }
 
@@ -11,12 +22,13 @@ body {
   overflow: scroll;
   position: fixed;
   top: 0;
-  bottom: 0%;
   width: 30%;
+  bottom: 0%;
 }
 
 .abstract {
   font-size: 17px;
+  color: #fff;
 }
 
 .article-map {
@@ -25,7 +37,11 @@ body {
   bottom: 0;
   left: 33%;
   width: 33%;
-  margin-bottom: 10px;
+}
+
+.article-show h3 {
+  font-family: 'PT Serif Caption', serif;
+  font-size: 25px;
 }
 
 .tweets {
@@ -33,6 +49,38 @@ body {
   position: fixed;
   top: 0;
   bottom: 0%;
+}
+
+.tweet-count {
+  color: white;
+}
+
+a {
+  color:white;
+}
+
+.article-show a:hover{
+  color:#BABDBF;
+  text-decoration:none;
+}
+
+.article-show a:visited{
+  color:white;
+  text-decoration:none;
+  text-decoration:none;
+}
+
+
+
+i {
+  font-size: 20px;
+  float: left;
+  color: white;
+}
+
+h1 {
+  color:white;
+  margin: 10px 0 20px 0;
 }
 
 h2 {
