@@ -39,6 +39,10 @@ body {
   width: 33%;
 }
 
+.article-show {
+  margin-top: -20px;
+}
+
 .article-show h3 {
   font-family: 'PT Serif Caption', serif;
   font-size: 25px;
