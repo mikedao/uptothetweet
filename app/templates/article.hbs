@@ -1,6 +1,11 @@
-<div class="col-md-4 article-show">
-  <h3>{{#link-to 'tweets'}} {{model.title}} {{/link-to}}</h3>
-  <p>{{model.abstract}}</p>
+<div class="col-md-4">
+  <div class="article-show">
+    <h3>{{model.title}}</h3>
+    <p>{{model.abstract}}</p>
+  </div>
+
+  {{article-map article=model}}
 </div>
 
 {{render 'tweets' model.tweets}}
+
