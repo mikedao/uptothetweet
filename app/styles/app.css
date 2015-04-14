@@ -41,6 +41,12 @@ h3 {
   font-size: 15px;
 }
 
-td {
-  border: 5px solid red;
+.user-info {
+  display: inline-block;
 }
+
+.user-tweet {
+  display: inline-block;
+  width: 300px;
+}
+
