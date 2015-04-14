@@ -6,7 +6,11 @@
           {{#each model as |tweet|}}
             <tr>
               <td>
-                <p>{{tweet.body}}</p>
+                <h3>{{tweet.username}}</h3>
+                <img {{bindAttr src="tweet.userProfileImage"}}>
+              </td>
+              <td style="width:100%;">
+                {{tweet.body}}
               </td>
             </tr>
           {{/each}}
