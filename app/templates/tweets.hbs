@@ -6,11 +6,11 @@
           {{#each model as |tweet|}}
           <tr>
             <td>
-              <div class="user-info">
+              <div class="user-image">
                 <img {{bindAttr src="tweet.userProfileImage"}}>
               </div>
               <div class="user-tweet">
-                <h3>{{tweet.username}}</h3>
+                <h4>{{tweet.username}}</h4>
                 {{tweet.body}}
               </div>
             </td>

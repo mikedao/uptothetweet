@@ -15,7 +15,8 @@ body {
   width: 30%;
 }
 
-.article-show {
+.abstract {
+  font-size: 17px;
 }
 
 .article-map {
@@ -24,6 +25,7 @@ body {
   bottom: 0;
   left: 33%;
   width: 33%;
+  margin-bottom: 10px;
 }
 
 .tweets {
@@ -38,11 +40,18 @@ h2 {
 }
 
 h3 {
+  font-size: 20px;
+}
+
+h4 {
   font-size: 15px;
 }
 
-.user-info {
+.user-image {
   display: inline-block;
+  float: left;
+  margin: 13px 15px 0 0;
+  height: 100%;
 }
 
 .user-tweet {
@@ -50,3 +59,6 @@ h3 {
   width: 300px;
 }
 
+td {
+  padding-top: 0;
+}
