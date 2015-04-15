@@ -4,11 +4,17 @@
       <table class="table">
         <tbody>
           {{#each model as |tweet|}}
-            <tr>
-              <td>
-                <p>{{tweet.body}}</p>
-              </td>
-            </tr>
+          <tr>
+            <td>
+              <div class="user-image">
+                <img {{bindAttr src="tweet.userProfileImage"}}>
+              </div>
+              <div class="user-tweet">
+                <h4>{{tweet.username}}</h4>
+                {{tweet.body}}
+              </div>
+            </td>
+          </tr>
           {{/each}}
         </tbody>
       </table>

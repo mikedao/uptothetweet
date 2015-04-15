@@ -1,7 +1,8 @@
 <div class="col-md-4">
   <div class="article-show">
-    <h3>{{model.title}}</h3>
-    <p>{{model.abstract}}</p>
+    <h3><a href={{model.url}} target="_blank">{{model.title}}</a></h3>
+    <p class="abstract">{{model.abstract}}</p>
+    <p class="tweet-count">Tweet Count: {{model.tweets.length}}</p>
   </div>
 
   {{article-map article=model}}
