@@ -1,5 +1,16 @@
-<div class="col-md-8">
+<script>
+  $(function(){
+      $(".col-md-8 > .instructions > .guide").typed({
+strings: ["view the conversation.", "view the tweets.", "see what's happening."],
+      typeSpeed: 22
+    });
+  });
+</script>
+
+<div class="col-md-8 well">
   <div class="instructions">
-    Click on an article to view its associated tweets and tweet locations.
+    <div class="instructions-title">Up to the Tweet News</div>
+    <h3>Because there's more to a story than just the article.</h3>
+    <span class="prepend-guide">Click on an article to </span><span class="guide"></span>
   </div>
 </div>
